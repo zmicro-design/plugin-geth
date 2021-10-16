@@ -10,7 +10,7 @@ services:
       TZ: Asia/Shanghai
     entrypoint: geth --mainnet --syncmode "light" --ws --ws.addr 0.0.0.0 --ws.port 3334 --datadir /data
     volumes:
-      - /data/geth:/data
+      - ${GETH_SERVICE_DATA}:/data
 
 networks:
   default:
