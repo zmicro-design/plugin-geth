@@ -1,0 +1,17 @@
+#!/bin/bash
+
+ensure_config() {
+  load inquirer
+
+  if [ ! -d $GETH_SERVICE_CONFIG_DIR ]; then
+    mkdir -p $GETH_SERVICE_CONFIG_DIR
+  fi
+
+  if [ ! -f $GETH_SERVICE_CONFIG_FILE ]; then
+    touch $GETH_SERVICE_CONFIG_FILE
+  fi
+
+  load_config_file $GETH_SERVICE_CONFIG_FILE
+}
+
+export -f ensure_config
