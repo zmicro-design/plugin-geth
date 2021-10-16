@@ -13,7 +13,7 @@ core() {
 
   ensure_config
 
-  zmicro plugin run compose stop $GETH_SERVICE_NAME
+  zmicro plugin run compose stop $PLUGIN_GETH_NAME
 }
 
 run() {

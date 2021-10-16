@@ -13,13 +13,13 @@ core() {
 
   ensure_config
 
-  zmicro plugin run compose start $GETH_SERVICE_NAME
+  zmicro plugin run compose start $PLUGIN_GETH_NAME
 
   # init user
   # @TODO
-  # zmicro plugin run compose exec $GETH_SERVICE_NAME:geth delete_admin admin >>/dev/null 2>&1
+  # zmicro plugin run compose exec $PLUGIN_GETH_NAME:geth delete_admin admin >>/dev/null 2>&1
   # #
-  # zmicro plugin run compose exec $GETH_SERVICE_NAME:geth create_admin admin admin >>/dev/null 2>&1
+  # zmicro plugin run compose exec $PLUGIN_GETH_NAME:geth create_admin admin admin >>/dev/null 2>&1
 
   log_success "启动成功"
 }
