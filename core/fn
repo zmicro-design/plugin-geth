@@ -3,7 +3,7 @@
 ensure_config() {
   load inquirer
 
-  # load_config_file $PLUGIN_GETH_CONFIG
+  # config::load_file $PLUGIN_GETH_CONFIG
 }
 
 export -f ensure_config

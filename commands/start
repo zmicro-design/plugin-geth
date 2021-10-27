@@ -21,7 +21,7 @@ core() {
   # #
   # zmicro plugin run compose exec $PLUGIN_GETH_NAME:geth create_admin admin admin >>/dev/null 2>&1
 
-  log_success "启动成功"
+  log::success "启动成功"
 }
 
 run() {
