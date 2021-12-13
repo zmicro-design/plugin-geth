@@ -4,7 +4,7 @@ export PLUGIN_GETH_DATA=$(plugin::get_app_data_path $PLUGIN_GETH_NAME)
 export PLUGIN_GETH_LOGS=$(plugin::get_app_logs_path $PLUGIN_GETH_NAME)
 export PLUGIN_GETH_CONFIGS=$(plugin::get_app_configs_path $PLUGIN_GETH_NAME)/config
 
-export GETH_SERVICE_VERSION=v1.10.8
+export GETH_SERVICE_VERSION=v1.10.13
 export GETH_SERVICE_PORT=3334
 
 # echo "PLUGIN_GETH_DATA: $PLUGIN_GETH_DATA"
